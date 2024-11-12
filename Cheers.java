@@ -23,9 +23,9 @@ public class Cheers {
                         }
 
                         if (check == true){
-                                System.out.println("Give me an " + CheerTo.charAt(index) + ":" + CheerTo.charAt(index) + "!");
+                                System.out.println("Give me an " + CheerTo.charAt(index) + ": " + CheerTo.charAt(index) + "!");
                         } else{
-                                System.out.println("Give me a  " + CheerTo.charAt(index) + ":" + CheerTo.charAt(index) + "!");
+                                System.out.println("Give me a  " + CheerTo.charAt(index) + ": " + CheerTo.charAt(index) + "!");
                         }
 
                         cheerslength--;
