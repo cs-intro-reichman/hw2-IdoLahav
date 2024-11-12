@@ -6,7 +6,7 @@ public class Cheers {
             int reps = Integer.parseInt(args[1]);
             int cheerslength = CheerTo.length();
             int index = 0; 
-            String an = "AEFHILMNORSX";
+            String an = "AaEFHILMNORSX";
 
                 while (cheerslength > 0 ){
                         boolean check = false;
@@ -25,7 +25,7 @@ public class Cheers {
                         if (check == true){
                                 System.out.println("Give me an " + CheerTo.charAt(index) + ":" + CheerTo.charAt(index) + "!");
                         } else{
-                                System.out.println("Give me a " + CheerTo.charAt(index) + ":" + CheerTo.charAt(index) + "!");
+                                System.out.println("Give me a  " + CheerTo.charAt(index) + ":" + CheerTo.charAt(index) + "!");
                         }
 
                         cheerslength--;
@@ -37,6 +37,5 @@ public class Cheers {
                         System.out.println(CheerTo + "!!!");
                         reps--;
                 }
-
         }
 }    
