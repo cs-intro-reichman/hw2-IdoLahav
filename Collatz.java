@@ -3,21 +3,21 @@ public class Collatz {
 	public static void main(String args[]) {
 	    int N = Integer.parseInt(args[0]);
 		String mode = args[1];
-		int n = 1;
+		int seed = 1;
 		int count = 1;
 		int steps = 1;
 		int reached = N;
 
 		while (N > 0){
-			System.out.print(n + " ");
-			while (n != 1 || steps ==1){
-				if (n % 2 == 0){
-					n = n /2 ;
+			System.out.print(seed + " ");
+			while (seed != 1 || steps ==1){
+				if (seed % 2 == 0){
+					seed = seed /2 ;
 				} else{
-					n = n * 3 + 1; 
+					seed = seed * 3 + 1; 
 				}
 				if(mode.equals("v")){
-				System.out.print(n + " ");
+				System.out.print(seed + " ");
 				}
 				steps++;
 			}
@@ -26,7 +26,7 @@ public class Collatz {
 			}
 			steps = 1;
 			count++;
-			n = count;
+			seed = count;
 			N--;
 		}
 		System.out.println("Every one of the first " + reached + " hailstone sequences reached 1.");
